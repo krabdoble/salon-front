@@ -1,0 +1,11 @@
+.nav-link:hover {
+    color: orangered;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+.label{
+    background-color: #1f1f1f;
+  color: #f5f6f7;
+}
+  
