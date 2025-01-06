@@ -59,13 +59,12 @@ const handleSubmit = async (e) => {
   }
 
   try {
-    const fechaInicioUTC = new Date(fechaInicio).toISOString();
-    const fechaFinUTC = new Date(fechaFin).toISOString();
+    
     const response = await axios.post('https://lounge-project-production.up.railway.app/api/reserva', {
       usuarioId: user.id,
       salonId: salonSeleccionado,
-      fechaInicio: fechaInicioUTC,
-      fechaFin: fechaFinUTC,
+      fechaInicio: fechaInicio,
+      fechaFin: fechaFin,
 
     },
     {

@@ -16,10 +16,6 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-/*<h2 className="d-flex justify-content-center align-item-center pt-3">
-          Welcome to <span style={{ color: "orangered", fontSize: "1.5rem", fontStyle:"italic"}}>Zopope</span> rent
-        </h2>*/
-
 
 
 function App() {
@@ -42,7 +38,7 @@ function App() {
               }
             ></Route>
             <Route
-              path="/altasalones"
+              path="/addlounge"
               element={
                 <ProtectedRoute>
                   <Navbar />
@@ -51,7 +47,7 @@ function App() {
               }
             ></Route>
             <Route
-              path="/altareservas"
+              path="/addreservation"
               element={
                 <ProtectedRoute>
                   <Navbar />
@@ -60,7 +56,7 @@ function App() {
               }
             ></Route>
             <Route
-              path="/calendarioreservas"
+              path="/calendar"
               element={
                 <ProtectedRoute>
                   <Navbar />
@@ -69,7 +65,7 @@ function App() {
               }
             ></Route>
             <Route
-              path="/listadoreservas"
+              path="/reservationlist"
               element={
                 <ProtectedRoute>
                   <Navbar />
@@ -87,7 +83,7 @@ function App() {
               }
             />
             <Route
-              path="/estadisticasreservas"
+              path="/statistic"
               element={
                 <ProtectedRoute>
                   <Navbar />
@@ -119,33 +115,4 @@ const ProtectedRoute = ({ redirectPath = "/", children }) => {
 };
 
 export default App;
-
-/*
-function App() {
-  const [user, setUser] = useState(null);
-
-  if (!user) {
-    return <Login setUser={setUser} />;
-  }
-
-  return (
-    <Router>
-      <nav>
-        
-        <Link to="/alta-salones">Alta de Salones</Link>
-        <Link to="/calendario-reservas">Calendario de Reservas</Link>
-        <Link to="/listado-reservas">Listado de Reservas</Link>
-        <Link to="/alta-reservas">Alta de Reservas</Link>
-      </nav>
-
-      <Route path="/" component={Login} />
-      <Route path="/alta-salones" component={AltaSalones} />
-      <Route path="/calendario-reservas" component={CalendarioReservas} />
-      <Route path="/listado-reservas" component={ListadoReservas} />
-      <Route path="/alta-reservas" component={AltaReservas} user={user} />
-    </Router>
-  );
-}
-  */
-
 

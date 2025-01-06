@@ -42,18 +42,6 @@ const ListadoReservas = () => {
     return coincideSalon && coincideFecha && coincidePersona;
   });
 
-  /*const eliminarReserva = async (id) => {
-    try {
-      await axios.delete(`http://localhost:3000/api/reserva/${id}`,{
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("firebaseToken")}`,
-        }
-      });
-      reservas();
-    } catch (error) {
-      console.error("Error deleting reservation:", error);
-    }
-  };*/
 
   return (
     <div className="container">
@@ -62,19 +50,19 @@ const ListadoReservas = () => {
       <div className="form-group mb-3"><input
         type="text"
         className="form-control"
-          placeholder="Filtrar por el nombre del salón"
+          placeholder="Filter by Lounge name"
           onChange={e => setFiltroSalon(e.target.value)}
         /></div>
         <div className="form-group mb-3"><input
         type="date"
       className="form-control"
-          placeholder="Filtrar por fecha (YYYY-MM-DD)"
+          placeholder="Filter by date (YYYY-MM-DD)"
           onChange={e => setFiltroFecha(e.target.value)}
         /></div>
         <div className="form-group mb-3"><input
         type="text"
       className="form-control"
-          placeholder="Filtrar por el nombre del cliente"
+          placeholder="Filter by customer name"
           onChange={e => setFiltroPersona(e.target.value)}
         /></div>
       </div>
@@ -114,24 +102,3 @@ const ListadoReservas = () => {
 };
 
 export default ListadoReservas;
-
-/*
-{user?.displayName}
-<img
-              src={user?.photoURL}
-              alt={user?.displayName}
-              style={{ width: '100px', height: '100px', borderRadius: '50%' }}
-            />
-
-            <h3>{user?.displayName}</h3>
-
-            <button onClick={() => eliminarReserva(reserva.id)}>
-                      Delete
-                    </button>
-
-                    <img
-              src={user?.imagen}
-              alt={user?.displayName}
-              style={{ width: '100px', height: '100px', borderRadius: '50%' }}
-            />
-            */

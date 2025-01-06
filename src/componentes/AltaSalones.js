@@ -3,7 +3,7 @@ import axios from "axios";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { Button } from "primereact/button";
-//import { useAuth } from "../providers/AuthProvider"
+
 
 const AltaSalones = () => {
   const [nombre, setNombre] = useState("");
@@ -14,7 +14,6 @@ const AltaSalones = () => {
   const [editando, setEditando] = useState(false);
   const [idEditando, setIdEditando] = useState(null);
 
-  //const { user} = useAuth();
 
   useEffect(() => {
     obtenerSalones();
