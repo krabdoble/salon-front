@@ -18,9 +18,7 @@ Reservation Management
 
 View reservations in a card-based format, displaying:
 
-User's photo
-
-Name
+User's Name
 
 Reservation date
 
