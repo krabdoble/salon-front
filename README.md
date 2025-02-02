@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+Reservation Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Overview
 
-## Available Scripts
+The Reservation Application is a web-based platform designed to manage event hall reservations efficiently. It allows users to register and log in using Firebase authentication, manage halls, create and list reservations, and visualize bookings in a calendar format. The app also includes filtering options, notifications, and statistical reports.
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+Authentication
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Login with Firebase authentication.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Event Hall Management
 
-### `npm test`
+Add and manage event halls for reservations.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Reservation Management
 
-### `npm run build`
+View reservations in a card-based format, displaying:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+User's photo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Name
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Reservation date
 
-### `npm run eject`
+Event hall
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Filter reservations by event hall, date, and user.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create new reservations specifying start and end date/time.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Calendar View
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Display all reservations using FullCalendar.
 
-## Learn More
+Edit reservations directly from the calendar.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Prevent overlapping reservations or new reservations within 1 hour after an existing one.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Notifications
 
-### Code Splitting
+Notify users of their reservations one day before via email.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Implemented using Nodemailer for sending emails and node-cron for scheduling tasks.
 
-### Analyzing the Bundle Size
+User Dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Display a list of past reservations in the user's detail page.
 
-### Making a Progressive Web App
+Statistics & Analytics
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Generate and display graphical reports of reservations per day and per hall.
 
-### Advanced Configuration
+Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Frontend: React, FullCalendar, Firebase Authentication
 
-### Deployment
+Backend: Node.js, Express.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Database: MongoDB / Firebase Firestore
 
-### `npm run build` fails to minify
+Notifications: Nodemailer, Node-Cron
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contact
+
+For any inquiries, feel free to contact patricelamarre@yahoo.fr or patricelmrr@gmail.com.
